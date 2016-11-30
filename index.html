@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Build a Wikipedia Viewer</title>
+    <title>fcc: Build a Wikipedia Viewer</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -11,6 +11,27 @@
     <script src="script.js"></script>
 </head>
 <body>
-    
+    <div>
+        <header>
+            <h1>Wikipedia Searcher Thingy</h1>
+        </header>
+    </div>
+    <div>
+        <form class="uk-search data-uk-search">
+            <input class="uk-search-field" type="search" placeholder="Wikipedia Search">
+        </form>
+    </div>
+    <div>
+        <form class="data-uk-search="{source:'https://en.wikipedia.org/w/api.php?action=opensearch&search=zyz&limit=1&namespace=0&format=json'}"">
+
+            <input class="uk-search-field" type="search" placeholder="This One!">
+
+            <!-- This is the dropdown, which is injected through JavaScript -->
+            <div class="uk-dropdown uk-dropdown-search">
+                <ul class="uk-nav uk-nav-search">...</ul>
+            </div>
+
+        </form>
+    </div>
 </body>
 </html>
