@@ -2,4 +2,4 @@
 
 - www.freecodecamp.com
 
-- Completed Project:  (pending...)
+- Completed Project:  https://codepen.io/josephcode773/pen/QGQaXb
