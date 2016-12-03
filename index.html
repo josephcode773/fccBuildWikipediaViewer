@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Build a Wikipedia Viewer</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.css">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.css">
     <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.js"></script>
-
-    <script src="script.js"></script>
+    <!--<script src="script.js"></script>-->
 </head>
+
 <body>
     <div>
         <h2>Wikipedia Searcher</h2>
     </div>
+
     <!--<div class="ui search">-->
-        <!--<div class="ui icon input">-->
-            <!--<input class="prompt" type="text" placeholder="Common passwords...">-->
-            <!--<i class="search icon"></i>-->
+        <!--<div class="ui left icon input">-->
+            <!--<input class="prompt" type="text" placeholder="Search Wikipedia">-->
+            <!--<i class="wikipedia icon"></i>-->
         <!--</div>-->
-        <!--<div class="results"></div>-->
     <!--</div>-->
-    <div class="ui search">
-        <div class="ui left icon input">
-            <input class="prompt" type="text" placeholder="Search GitHub">
-            <i class="github icon"></i>
-        </div>
-    </div>
+
+    <form id="target">
+        <input value="" id="search-box">
+        <input id="send" type="submit" value="Search">
+    </form>
+
+    <ol id="wikiResults"></ol>
 
     <script src="script.js"></script>
 </body>
+
 </html>
